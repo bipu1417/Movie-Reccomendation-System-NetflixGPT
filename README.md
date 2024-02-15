@@ -2,7 +2,12 @@
 
 - Create React App
 - Configured Tailwind CSS
+- Build Header
+- Login Form
+- Sign Up Form
 
+# RAFCE 
+    - React Arrow Function Component Export
 ### Features :
     - Login/sign up page
         - sign in sign up form

@@ -1,10 +1,9 @@
 import './App.css';
+import Body from './components/Body';
 
 function App() {
   return (
-    <div className="text-xl rounded-md text-red-800">
-      Netflix GPT is loading....
-    </div>
+   <Body />
   );
 }
 
