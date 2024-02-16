@@ -1,5 +1,7 @@
 # Netflix GPT
 
+Live URL : https://netflixgpt-7aad3.web.app/
+
 - Create React App
 - Configured Tailwind CSS
 - Build Header
