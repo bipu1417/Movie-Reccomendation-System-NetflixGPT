@@ -17,7 +17,23 @@ Live URL : https://netflixgpt-7aad3.web.app/
 - created redux store with user slice
 - implemented sign out
 - update profile api
-- ftech movies from tmdb
+- fetch movies from tmdb
+- bugfix: sign up user displayName and profile pictures update
+- bugFix: if the user is not logged in redirect /browse to login page & vice-versa
+- Unsubscribed to the onAuthStateChanged call back
+- Add hardcoded values into constants file - [IMPORTANT]
+- registered tmdb API and get access token
+- get data from TMDB now playing movies list API
+- created custom hook for nowplaying movies and trailer video
+- create movieSlice in store
+- update store with movies data
+- planning for main container and secondary container
+- fetch data for trailer videos
+- update store with trailer video data
+- embedded the youtube video and make it autoplay and mute
+- Tailwind classes to make main container look awesome
+
+
 
 # RAFCE 
     - React Arrow Function Component Export
