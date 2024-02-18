@@ -16,3 +16,5 @@ export const options = {
 
   export const IMG_CDN_URL = "https://image.tmdb.org/t/p/w500";
   export const POPULAR_MOVIES_URL = "https://api.themoviedb.org/3/movie/popular?page=1";
+  export const TOP_RATED_MOVIES_URL = "https://api.themoviedb.org/3/movie/top_rated?page=1";
+  export const TOP_RATED_SERIES_URL = "https://api.themoviedb.org/3/tv/top_rated?page=1";
