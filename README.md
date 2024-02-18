@@ -24,7 +24,7 @@ Live URL : https://netflixgpt-7aad3.web.app/
 - Add hardcoded values into constants file - [IMPORTANT]
 - registered tmdb API and get access token
 - get data from TMDB now playing movies list API
-- created custom hook for nowplaying movies and trailer video
+- created custom hook for nowplaying movies and trailer video - [IMPORTANT]
 - create movieSlice in store
 - update store with movies data
 - planning for main container and secondary container
@@ -32,6 +32,13 @@ Live URL : https://netflixgpt-7aad3.web.app/
 - update store with trailer video data
 - embedded the youtube video and make it autoplay and mute
 - Tailwind classes to make main container look awesome
+- Built Secondary component
+- Build movie list
+- Built movie card
+- TMDB image CDN URL
+- Made the Browse page amazing with Tailwind CSS
+- usePopularMovies Custom Hook
+
 
 
 

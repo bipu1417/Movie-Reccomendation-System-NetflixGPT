@@ -2,6 +2,7 @@ export const logo = 'https://cdn.cookielaw.org/logos/dd6b162f-1a32-456a-9cfe-897
 export const photoUrl = "https://avatars.githubusercontent.com/u/15422942?v=4";
 export const userIcon = "https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png";
 
+// Uncomment the below lines to run this project successfully
 export const options = {
     method: 'GET',
     headers: {
@@ -12,3 +13,6 @@ export const options = {
 
   export const url = 'https://api.themoviedb.org/3/movie/now_playing?page=1';
   export const MOVIE_VIDEO_URL = "https://api.themoviedb.org/3/movie/";
+
+  export const IMG_CDN_URL = "https://image.tmdb.org/t/p/w500";
+  export const POPULAR_MOVIES_URL = "https://api.themoviedb.org/3/movie/popular?page=1";
