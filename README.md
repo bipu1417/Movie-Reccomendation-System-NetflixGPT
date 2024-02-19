@@ -38,6 +38,7 @@ Live URL : https://netflixgpt-7aad3.web.app/
 - TMDB image CDN URL
 - Made the Browse page amazing with Tailwind CSS
 - usePopularMovies Custom Hook
+- GPT search feature
 
 
 
