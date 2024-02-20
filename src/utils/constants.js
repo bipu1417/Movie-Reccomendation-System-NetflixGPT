@@ -40,3 +40,6 @@ export const options = {
       identifier: "bengali", 
       name: "Bengali"
     }];
+
+    export const OPEN_AI_KEY = "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";
+    export const SEARCH_MOVIE_API = "https://api.themoviedb.org/3/search/movie?query=";
