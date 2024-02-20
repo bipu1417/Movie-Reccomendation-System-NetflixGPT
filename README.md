@@ -1,7 +1,5 @@
 # Netflix GPT
 
-Live URL : https://netflixgpt-7aad3.web.app/
-
 - Create React App
 - Configured Tailwind CSS
 - Build Header
@@ -39,6 +37,9 @@ Live URL : https://netflixgpt-7aad3.web.app/
 - Made the Browse page amazing with Tailwind CSS
 - usePopularMovies Custom Hook
 - GPT search feature
+- GPT search Bar
+- [Surprise] Multi-Lingual Feature in our App
+- Integrate GPT APIs, APIS(get open AI Key)
 
 
 

@@ -62,16 +62,11 @@ const Header = () => {
             SUPPORTED_LANGUAGES.map(lang => <option key={lang.identifier} value={lang.identifier}>{lang.name}</option>)
           }
         </select>}
-        {
-        showLangSelector ? <button className='py-2 px-4 m-2 bg-purple-800 text-white rounded-lg mx-4 my-4'
-        onClick={handleGptSearchClick}
-        >Home</button> : 
         <button className='py-2 px-4 m-2 bg-purple-800 text-white rounded-lg mx-4 my-4'
         onClick={handleGptSearchClick}
-        >GPT search</button>
-        }
-        <img className='w-10 h-10 mt-4' src={user.photoURL} alt='user-icon' />
-        <button onClick={handleSignOut} className='font-bold text-white'>Sign Out</button>
+        >{showLangSelector ? "Home" : "GPT Search"}</button>
+        <img className='w-10 h-10 mt-4 rounded-lg' src={user.photoURL} alt='user-icon' />
+        <button onClick={handleSignOut} className='font-bold text-white'>[Sign Out]</button>
       </div>}
     </div>
   )
