@@ -1,11 +1,13 @@
 import React, { useRef } from 'react';
 import lang from '../utils/languageConstants';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import openai from '../utils/opanAi';
 import { SEARCH_MOVIE_API, options } from '../utils/constants';
+import { addGptMovieResult } from '../utils/gptSlice';
 
 const GptSearchBar = () => {
   const langKey = useSelector(store => store.config.lang);
+  const dispatch = useDispatch();
   const searchText = useRef("");
 
   // Search movie in TMDB
@@ -32,9 +34,13 @@ const GptSearchBar = () => {
       }
 
       const gptMovieList = gptResults?.choices?.[0]?.message?.content.split(",");
+      // dispatch(addGpSearchResult(gptMovieList));
       // console.log(gptResults?.choices?.[0]?.message?.content);
       // Search for each movies
-      
+      const promiseArray = gptMovieList.map(movie => searchMovieTmdb(movie));
+      // array of promises will be returned [promise1, promise2,..,..,.]
+      const tmdbResults = await Promise.all(promiseArray);
+      dispatch(addGptMovieResult({movieNames: gptMovieList, moviesResult: tmdbResults}));
     
   }
   return (
