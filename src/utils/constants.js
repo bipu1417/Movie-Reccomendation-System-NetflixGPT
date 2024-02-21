@@ -7,7 +7,7 @@ export const options = {
     method: 'GET',
     headers: {
       accept: 'application/json',
-      Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIzYjJhZWJkYmZiZmJjZDk1MGI5YWYwNWRlN2FhOWFhNiIsInN1YiI6IjY1ZDBkMjMyNjJmY2QzMDE4NzQxNTQ0NCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.M8MkCcdGS8J53L5_BaDa1W5kWlF0yCuhbM6pEukwQC0'
+      Authorization: 'Bearer '+process.env.REACT_APP_TMDB_KEY,
     }
   };
 
@@ -41,5 +41,5 @@ export const options = {
       name: "Bengali"
     }];
 
-    export const OPEN_AI_KEY = "";
+    export const OPEN_AI_KEY = process.env.REACT_APP_OPEN_AI_KEY;
     export const SEARCH_MOVIE_API = "https://api.themoviedb.org/3/search/movie?query=";
