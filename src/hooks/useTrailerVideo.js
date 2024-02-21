@@ -1,10 +1,11 @@
 import { MOVIE_VIDEO_URL, options } from '../utils/constants';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { addTrailerVideos } from '../utils/movieSlice';
 import { useEffect } from 'react';
 
 const useTrailerVideo = (movieid) => {
     const dispatch = useDispatch();
+    const trailerVideos = useSelector(store => store.movies.trailerVideos);
 
   const getMovieVideo = async () => {
     const data = await fetch(MOVIE_VIDEO_URL+movieid+"/videos?language=en-US", options);
@@ -18,7 +19,7 @@ const useTrailerVideo = (movieid) => {
   };
 
   useEffect(() => {
-    getMovieVideo();
+    !trailerVideos && getMovieVideo();
   }, []);
 };
 
