@@ -1,4 +1,6 @@
 # Netflix GPT
+A Movie recommendation system powered by GPT 3.5.
+Tech Stack : React JS, Redux Toolkit, Tailwind CSS, GPT 3.5
 
 # Live URL : https://netflixgpt-6af87.web.app/
 
